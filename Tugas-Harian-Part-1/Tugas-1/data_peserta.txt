@@ -1,0 +1,6 @@
+Data Peserta JCC 2021 Bootcamp ReactJS
+1. Nama: Ikhsan Muhamad Nurdin
+2. Email: ikhsanmuhn@gmail.com
+3. Sistem Operasi yang digunakan: Windows
+4. Akun Gitlab/Github: Github/ikhsanmuhn
+5. Akun Telegram: @ikhsanmuhn
