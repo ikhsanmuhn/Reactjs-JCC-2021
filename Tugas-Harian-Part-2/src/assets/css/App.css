@@ -2,8 +2,8 @@
   text-align: center;
 }
 .container{
-  margin-left: 400px;
-  margin-right: 400px;
+  margin-left: 480px;
+  margin-right: 480px;
   margin-top: 100px;
   margin-bottom: 100px;
   width: 400px;
@@ -45,4 +45,14 @@
 }
 .button:active{
   background-color: #ff2c5a;
+}
+.jam{
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+.countdown{
+  text-align: center;
+  margin-right: 220px;
+  margin-top: 0px;
 }
