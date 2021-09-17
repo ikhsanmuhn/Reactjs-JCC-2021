@@ -12,12 +12,31 @@ export const MahasiswaProvider = props =>{
     )
     const [currentId, setCurrentId] = useState(null)   
     
+    const indexNilai = (e) =>{
+        
+        if(e >= 80){
+            return "A";
+        }
+        else if(e >= 70 && e<80){
+            return "B"
+        }
+        else if(e >= 60 && e<70){
+            return "C"
+        }
+        else if(e >= 50 && e<60){
+            return "D"
+        }
+        else if(e<50){
+            return "E"
+        }   
+    }
+    
     const fetchData = async () => {
         const result = await axios.get(`http://backendexample.sanbercloud.com/api/student-scores`)
         let data = result.data
-        setDaftarMahasiswa(data.map((x)=>{ 
-            let {id, name, course,score} = x
-            return {id, name, course,score} 
+        setDaftarMahasiswa(data.map((x, index)=>{ 
+            let indexScore = indexNilai(x.score)
+            return {no: index +1, id: x.id, name: x.name, course: x.course, score: x.score, indexScore: indexScore} 
         }))   
     }
 

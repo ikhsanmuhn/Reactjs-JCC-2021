@@ -1,6 +1,7 @@
 import React,{ useContext } from "react";
 import { ThemeContext } from "./ThemeColor";
 import '../assets/css/App.css';
+import { Switch } from 'antd';
 
 const ButtonSwitch = () =>{
 
@@ -11,7 +12,7 @@ const ButtonSwitch = () =>{
     }
     return(
         <>
-            <button onClick={handleClick} className="button-theme">Ganti Tema Navbar</button>
+            <Switch checkedChildren="Dark" unCheckedChildren="Light" defaultUnChecked onClick={handleClick}/>
         </>
     )
 }

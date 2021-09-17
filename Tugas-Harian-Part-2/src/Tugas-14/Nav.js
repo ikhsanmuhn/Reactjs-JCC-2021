@@ -2,6 +2,7 @@ import React, {useContext} from "react"
 import { Link } from "react-router-dom"
 import '../assets/css/App.css';
 import { ThemeContext } from "./ThemeColor";
+import ButtonSwitch from "./ButtonSwitch.js";
 
 const Nav = () =>{
     const {theme, setTheme} =  useContext(ThemeContext)
@@ -28,6 +29,12 @@ const Nav = () =>{
               </li>
               <li>
                 <Link to="/tugas14">Tugas 14</Link>
+              </li>
+              <li>
+                <Link to="/tugas15">Tugas 15</Link>
+              </li>
+              <li className="switch">
+              <ButtonSwitch/>
               </li>
             </ul>
           </nav>

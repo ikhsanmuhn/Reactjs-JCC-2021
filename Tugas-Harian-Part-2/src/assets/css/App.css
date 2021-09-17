@@ -224,3 +224,8 @@ li {
 .black li a:hover:not(.active) {
   background-color: #666;
 }
+
+.switch{
+  padding: 14px 16px;
+  float: right;
+}

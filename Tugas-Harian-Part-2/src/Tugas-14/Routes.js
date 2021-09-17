@@ -8,6 +8,8 @@ import { MahasiswaProvider } from '../Tugas-13/MahasiswaContext.js';
 import MahasiswaForm2 from './MahasiswaForm2.js';
 import { ThemeProvider } from './ThemeColor.js';
 import Nav from './Nav.js';
+import MahasiswaForm3 from '../Tugas-15/MahasiswaForm3.js';
+import MahasiswaList3 from '../Tugas-15/MahasiswaList3.js';
 import '../assets/css/App.css';
 
 import {
@@ -17,6 +19,7 @@ import {
   Link,
   useParams
 } from "react-router-dom"
+
 
 
 function NavTugas9() {
@@ -52,6 +55,21 @@ function Form14() {
         </MahasiswaProvider>
     )
 }
+function NavTugas15() {
+  return (
+      <MahasiswaProvider>
+          <MahasiswaList3/>
+      </MahasiswaProvider>
+  )
+  
+}
+function Form15() {
+  return (  
+      <MahasiswaProvider>
+          <MahasiswaForm3/>
+      </MahasiswaProvider>
+  )
+}
 
 const Routes = () => {
   return (
@@ -69,6 +87,9 @@ const Routes = () => {
                 <Route path="/tugas14" exact component={NavTugas14}/>
                 <Route path="/tugas14/create" exact component={Form14}/>
                 <Route path="/tugas14/:slug" exact component={Form14}/>
+                <Route path="/tugas15" exact component={NavTugas15}/>
+                <Route path="/tugas15/create" exact component={Form15}/>
+                <Route path="/tugas15/:slug" exact component={Form15}/>
             </Switch>  
             </div>
           </ThemeProvider>    
