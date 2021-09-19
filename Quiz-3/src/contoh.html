@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="">
+            <img src="./assets/img/logo.png" width="70" />
+        </a>
+        <a href="#">Home</a>
+        <a href="#">Movie List</a>
+        <a href="#">About</a>
+        <form>
+            <input type="text" />
+            <input type="submit" value="Cari" />
+        </form>
+    </div>
+
+    <div class="row">
+        <div class="section">
+            <div class="card">
+                <div>
+                    <h2>bame</h2>
+                    <h5>Release Year : year</h5>
+                    <img className="fakeimg" style="width: 50%; height: 300px; object-fit: cover;" src="" />
+                    <br />
+                    <br />
+                    <div>
+                        <strong>Price: price</strong><br />
+                        <strong>Rating: rating</strong><br />
+                        <strong>Size: size</strong><br />
+                        <strong style="margin-right: 10px">Platform : Android & IOS
+                        </strong>
+                        <br />
+                    </div>
+                    <p>
+                        <strong style="margin-right: 10px">Description :</strong>
+                        {item.description}
+                    </p>
+
+                    <hr />
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <h5>&copy; Quiz 3 ReactJS Sanbercode</h5>
+    </footer>
+</body>
+
+</html>
